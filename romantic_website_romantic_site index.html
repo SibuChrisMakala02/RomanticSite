@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>A Special Love — For You</title>
+  <style>
+    :root{--bg:#fff6f8;--card:#ffffff;--accent:#ff6b9a;--muted:#6b6b6b}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,system-ui,Segoe UI,Arial,sans-serif;background:linear-gradient(135deg,var(--bg),#fff);display:flex;align-items:center;justify-content:center;min-height:100vh;padding:32px}
+    .card{max-width:760px;width:100%;background:var(--card);border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.08);padding:32px;display:grid;grid-template-columns:1fr 320px;gap:24px;align-items:center}
+    @media (max-width:800px){.card{grid-template-columns:1fr} .side{order:-1}}
+    h1{margin:0;font-size:28px;color:#3b3b3b}
+    p.lead{margin:12px 0 24px;color:var(--muted);line-height:1.55}
+    .heart{width:86px;height:86px;border-radius:50%;display:flex;align-items:center;justify-content:center;background:linear-gradient(180deg,var(--accent),#ff3f7a);box-shadow:0 8px 20px rgba(255,107,154,.25);}
+    .heart svg{width:44px;height:44px;fill:#fff}
+    .meta{font-size:14px;color:#8a8a8a}
+    .side{display:flex;flex-direction:column;gap:12px;align-items:center}
+    .photo{width:100%;height:220px;background:#f3f3f3;border-radius:12px;background-size:cover;background-position:center;}
+    .btn{display:inline-block;padding:10px 16px;border-radius:10px;background:var(--accent);color:#fff;text-decoration:none;font-weight:600}
+    footer{margin-top:18px;font-size:13px;color:#a0a0a0}
+    .pulse{animation:pulse 2s infinite}
+    @keyframes pulse{0%{transform:scale(1)}50%{transform:scale(1.04)}100%{transform:scale(1)}}
+    .note{margin-top:12px;padding:10px;border-radius:10px;background:#fff6fb;border:1px solid rgba(255,107,154,.09);font-size:13px}
+  </style>
+</head>
+<body>
+  <main class="card" role="main">
+    <section>
+      <div style="display:flex;align-items:center;gap:16px">
+        <div class="heart pulse" aria-hidden><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.35-10-7.03C-1.1 10.55 3.53 4 8.81 6.19 10.6 7.07 12 9 12 9s1.4-1.93 3.19-2.81C20.47 4 25.1 10.55 22 13.97 19.5 16.65 12 21 12 21z"/></svg></div>
+        <div>
+          <h1>For you, My Love❤️</h1>
+          <div class="meta">A small page I made to say thank you — SIBUSISO to MATAMANDO </div>
+        </div>
+      </div>
+
+      <p class="lead" id="message">
+        My dearest Matamando,
+        <br><br>
+        Thank you for being the gentle light in my life. Your kindness, warmth, and laughter make ordinary days feel like home. I am grateful for every smile, every quiet moment, and every encouragement you give me. With you, I am braver, stronger, and happier. I love you more than words can say.
+        May the special gift you have received bring you joy and peace. PS Umadziwa ndiwe Nzanga kwambirii? Yes iwe ndi nzanga wapa MTIMA<br><br>
+        Always yours♾️07/08/2025,
+        <br>BAE or in your illustrious words ASAYA!
+      </p>
+
+      <audio controls>
+        <source src="Ben_E_King_-_-_Stand_By_Me.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <footer>
+        <small>Music: Ben E. King — Stand By Me ❤️</small>
+      </footer>
+    </section>
+
+    <aside class="side">
+      <div class="photo" id="photo" style="background-image: url(Herphoto.jpg);" aria-hidden></div>
+      <a class="btn" id="customizeBtn" href="#" onclick="document.getElementById('message').scrollIntoView({behavior:'smooth'});return false;">Isn't She Beautiful😍</a>
+      <div style="width:100%;text-align:center;margin-top:6px;font-size:13px;color:#9a9a9a"> </div>
+    </aside>
+  </main>
+</body>
+</html>
